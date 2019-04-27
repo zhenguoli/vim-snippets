@@ -182,10 +182,8 @@ snippet pudb
 snippet nosetrace
 	__import__('nose').tools.set_trace()
 snippet pprint
-	__import__('pprint').pprint(${1})
-snippet "
-	"""${0:doc}
-	"""
+	import pprint
+	pprint.pprint(${1})
 # assertions
 snippet a=
 	self.assertEqual(${0}, ${1})

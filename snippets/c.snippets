@@ -21,6 +21,9 @@ snippet inc
 # #include "..."
 snippet Inc
 	#include "${1:`vim_snippets#Filename("$1.h")`}"
+# #include "..."
+snippet incq
+	#include "${1:`vim_snippets#Filename("$1.h")`}"
 # ifndef...define...endif
 snippet ndef
 	#ifndef $1
